@@ -741,7 +741,7 @@ def build_pdf(
         # Title page
         fig_title = plt.figure(figsize=(11, 8.5))
         # Title page heading
-        fig_title.text(0.5, 0.6, "Daily Work Order Log", fontsize=24, ha="center")
+        fig_title.text(0.5, 0.6, "Daily MS Work Order Log", fontsize=24, ha="center")
         fig_title.text(0.5, 0.5, f"Report for {date_label}", fontsize=16, ha="center")
         plt.axis("off")
         pdf.savefig(fig_title)
@@ -931,8 +931,8 @@ def _style_types(df: pd.DataFrame):
 # Set the Streamlit page configuration and main title.  The title has been
 # updated from "Work Order Reporting App" to reflect its purpose as a daily
 # log of work orders.
-st.set_page_config(page_title="Daily Work Order Log", layout="wide")
-st.title("Daily Work Order Log")
+st.set_page_config(page_title="Daily MS Work Order Log", layout="wide")
+st.title("Daily MS Work Order Log")
 
 with st.sidebar:
     st.header("Upload file")
